@@ -16,9 +16,9 @@ void Contador(){
     Thread.Sleep(500);
     Console.ForegroundColor = (ConsoleColor)(++numero);
     Console.WriteLine("Saindo");
-    Console.Beep(1000, 100);
-    Console.Beep(1000, 100);
-    Console.Beep(1000, 100);
+    for (int i = 1; i <= 3; i++){
+        Console.Beep(1000, 100);
+    }
     Console.ResetColor();
     #pragma warning restore CA1416
 }
